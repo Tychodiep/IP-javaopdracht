@@ -1,5 +1,4 @@
 
-
 const RandomKnop = document.querySelector("#draai")
 
 let fruit= ["🍏","🍒","⭐️","𝟟"]; 
