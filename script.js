@@ -5,7 +5,7 @@ let fruit= ["🍏","🍒","⭐️","𝟟"];
 
         function RandomFruit() {
             const randomIndex = Math.floor(Math.random() * fruit.length);
-            return fruit[randomIndex];
+            return fruit[randomIndex]; 
         }
 
         function spin() {
@@ -13,21 +13,21 @@ let fruit= ["🍏","🍒","⭐️","𝟟"];
             const slot2 = RandomFruit();
             const slot3 = RandomFruit();
 
-            document.getElementById("slot1").textContent = slot1;
-            document.getElementById("slot2").textContent = slot2;
-            document.getElementById("slot3").textContent = slot3;
+            document.querySelector("#slot1").textContent = slot1;
+            document.querySelector("#slot2").textContent = slot2;
+            document.querySelector("#slot3").textContent = slot3;
 
             if (slot1 === slot2 && slot2 === slot3 && slot1 === slot3) {
-                document.getElementById("result").textContent = "Je hebt gewonnen!🥳";
+                document.querySelector("#result").textContent = "Je hebt gewonnen!🥳";
                 
             } 
 
             else {
-                document.getElementById("result").textContent = "Verloren!";
+                document.querySelector("#result").textContent = "Verloren!";
             }
 
             if (slot1 == "𝟟" && slot2 == "𝟟" && slot3 == "𝟟") {
-             document.getElementById("result").textContent = "JACKPOT!!!!!!!!!";
+             document.querySelector("#result").textContent = "JACKPOT!!!!!!!!!";
             }
         }
 
